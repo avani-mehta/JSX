@@ -2,10 +2,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function getTime() {
+    return (new Date()).toLocaleTimeString()
+}
 //Create React component
 const App = () => {
-  return <div>Hello there!!</div>;
-};
+  return <div>
+  <div>Hey there!!Current time is:</div>
+  <h3>{getTime()}</h3>
+</div>
+}
+
 
 // Take the React component and show it on UI/screen
 ReactDOM.render(
